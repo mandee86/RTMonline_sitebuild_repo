@@ -1,0 +1,74 @@
+.scroll-slider {
+  position: relative;
+  padding-bottom: 31px;
+  padding-left: 0;
+  padding-right: 0;
+  @include media-breakpoint-up(lg) {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  .swiper-container {
+    width: 100%;
+    position: static;
+    .swiper-slide {
+      width: 40%;
+      // shadow
+      padding-bottom: 5px;
+      height: auto;
+      @include media-breakpoint-down(sm) {
+        width: 70%;
+      }
+      @include media-breakpoint-down(xs) {
+        width: 100%;
+      }
+    }
+    .swiper-scrollbar {
+      height: 6px;
+      left: 0;
+      right: 0;
+      // bottom: -36px;
+      border-radius: 15px;
+      width: auto;
+      background: rgba(0,0,0,0.06);
+      @include media-breakpoint-up(lg) {
+        left: 65px;
+        right: 65px;
+      }
+      .swiper-scrollbar-drag {
+        background: rgba(0,0,0,0.15);
+        border-radius: 15px;
+      }
+    }
+    .swiper-button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: $white;
+      @extend .box-shadow;
+      cursor: pointer;
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
+      &.swiper-button-prev {
+        left: 0;
+      }
+      &.swiper-button-next {
+        right: 0;
+      }
+    }
+  }
+  &.scroll-slider--white {
+    .swiper-container {
+      .swiper-scrollbar {
+        background: rgba(255,255,255,0.06);
+        .swiper-scrollbar-drag {
+          background: rgba(255,255,255,0.15);
+        }
+      }
+    }
+  }
+}
+

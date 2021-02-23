@@ -1,0 +1,28 @@
+.feed-item {
+  display: flex;
+  flex-direction: column;
+  min-height: 300px;
+  .icon-wrapper {
+    height: 100px;
+    line-height: 100px;
+    margin-bottom: 20px;
+  }
+  .avatar-wrapper {
+    height: 120px;
+    margin-bottom: 20px;
+  }
+  .content {
+    flex: 1;
+  }
+  .date {
+    text-transform: uppercase;
+    text-align: right;
+    color: $grey-text;
+    font-size: 14px;
+    font-family: $font-regular;
+  }
+  .avatar {
+    width: 120px;
+    height: 120px;
+  }
+}

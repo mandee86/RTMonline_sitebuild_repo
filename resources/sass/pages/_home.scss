@@ -1,0 +1,42 @@
+#RTM-section {
+  margin-bottom: -125px;
+}
+
+#video-slider-section {
+  padding-top: 215px;
+  @include media-breakpoint-down(md) {
+    padding-top: 175px;
+  }
+}
+
+#registration-section {
+  .img-wrapper {
+    position: relative;
+    margin-left: -25px;
+    @include media-breakpoint-down(sm) {
+      height: 300px;
+      margin-right: -25px;
+      max-width: none;
+      flex: auto;
+    }
+    .img-gradient {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      bottom: 65px;
+      @include media-breakpoint-down(sm) {
+        bottom: 0;
+      }
+    }
+  }
+  .text-wrapper {
+    @include media-breakpoint-up(md) {
+      padding-left: 25px;
+    }
+  }
+}
+
+#newsletter-section {
+  padding-top: 35px;
+}

@@ -1,0 +1,153 @@
+button, .btn {
+  color: $white;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: none;
+  background: $green;
+  font-size: 15px;
+  line-height: 18px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-radius: 18px;
+  font-family: $font-regular;
+  box-shadow: 0px 0 3px 0px rgba(0,0,0,0.15);
+  &:hover, &:focus {
+    color: $white;
+    outline: none;
+    border: none;
+  }
+  &:active, &.active {
+    box-shadow: none;
+  }
+  &:focus, &:active:focus, &:active.focus, &.active:focus, &.active:focus {
+    outline: none
+  }
+  span {
+    font-size: 11px;
+    line-height: 20px;
+  }
+}
+
+// variants
+.btn--outlined {
+  background: $white;
+  border: 2px solid $red;
+  color: red;
+  box-shadow: none;
+  &:hover {
+    color: $white;
+    background-color: $red;
+    border: 2px solid $red;
+  }
+}
+
+// size
+.btn--xs {
+  font-size: 11px!important;
+}
+
+.btn--lg {
+  font-size: 25px;
+  line-height: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family: $font-bold;
+  border-radius: 30px;
+}
+
+
+// color
+.btn--white {
+  background-color: $white;
+  color: $green;
+  &:hover, &:focus {
+    color: $green;
+  }
+}
+
+.btn--pink {
+  background-color: $pink;
+  color: $white;
+  &:hover, &:focus {
+    color: $white;
+  }
+}
+
+.btn--light-pink {
+  background-color: $pink-light;
+  color: $white;
+  &:hover, &:focus {
+    color: $white;
+  }
+}
+
+.btn--green {
+  background-color: $green;
+  color: $white;
+  &:hover, &:focus {
+    color: $white;
+  }
+}
+
+.btn--blue {
+  background-color: $blue;
+  color: $white;
+  &:hover, &:focus {
+    color: $white;
+  }
+}
+// .btn--grey {
+//   background-color: $grey-light;
+//   color: $black;
+//   &:hover, &:focus {
+//     color: $black;
+//   }
+// }
+
+// .btn--grey-dark {
+//   background-color: $grey-dark;
+// }
+
+// .btn--red {
+//   background-color: $red;
+// }
+
+// .btn--green-dark {
+//   background-color: $green-dark;
+// }
+
+// btn status
+//
+.btn--inactive {
+  pointer-events: none;
+  cursor: default;
+  background-color: lightgray;
+  color: white;
+}
+
+// icon button
+.icon-button {
+  padding: 1px 6px!important;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  font-size: 18px;
+  i {
+    line-height: 40px;
+    font-size: 18px;
+  }
+}
+
+// custom buttons
+.btn-hamburger {
+  width: 35px;
+  height: 25px;
+  box-shadow: none;
+  background: red;
+  border: none;
+}
+
+
+

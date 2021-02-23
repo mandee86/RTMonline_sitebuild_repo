@@ -1,0 +1,103 @@
+#site-header {
+  background-color: $white;
+  .navbar {
+    height: 90px;
+    padding-left: 0;
+    padding-right: 0;
+    > .container {
+      padding-left: 15px!important;
+      padding-right: 15px!important;
+      // @include media-breakpoint-down(md) {
+        
+      // }
+    }
+    .navbar-collapse {
+      @include media-breakpoint-down(md) {
+        position: absolute;
+        z-index: 2;
+        top: 100%;
+        width: 100%;
+        left: 0px;
+        background: $white;
+      }
+    }
+  }
+  .navbar-nav {
+    flex: 1;
+    display: flex;
+    .nav-item {
+      flex: 1;
+      @include media-breakpoint-up(lg) {
+        padding: 0 6px;
+      }
+      a {
+        font-size: 16px;
+        line-height: 24px;
+        font-family: $font-regular;
+      }
+      > a {
+        position: relative;
+        height: 50px;
+        line-height: 50px;
+        padding: 0 20px;
+        @include media-breakpoint-up(lg) {
+          border-radius: 30px;
+        }
+        &:after {
+          position: absolute;
+          right: 20px;
+          top: 50%;
+          transform: translateX(-50%);
+        }
+      }
+      &.show, &:hover {
+        > a {
+          background-color: $grey-light;
+        }
+      }
+      .dropdown-menu {
+        border: none;
+        top: 70px;
+        background-color: $pink;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        padding: 15px 0;
+        @extend .box-shadow;
+        overflow: hidden;
+        @include media-breakpoint-down(md) {
+          border-radius: 0;
+          box-shadow: none;
+        }
+        a {
+          color: $white;
+          padding: 8px 20px;
+          white-space: normal;
+          &:hover {
+            background-color: $pink-light;
+          }
+        }
+      }
+    }
+  }
+  .login {
+    @extend .text-uppercase;
+    font-size: 12px;
+    line-height: 14px;
+    font-family: $font-regular;
+    padding-left: 40px;
+  }
+  .header-mobile-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    @include media-breakpoint-down(md) {
+      flex: 1;
+    }
+    .btn-hamburger {
+      margin-left: 30px;
+    }
+  }
+}
+

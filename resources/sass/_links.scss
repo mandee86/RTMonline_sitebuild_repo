@@ -1,0 +1,55 @@
+a {
+  &:hover {
+    color:  $blue-dark
+  }
+}
+
+.link {
+  display: inline-block;
+  vertical-align: middle;
+  color: $red;
+  &:hover, &:focus {
+    color: $red;
+  }
+}
+
+.link-green {
+  color: $green;
+  &:hover, &:focus {
+    color: $green;
+  }
+}
+
+.link--blue {
+  color: $blue;
+  &:hover, &:focus {
+    color: $blue;
+  }
+}
+
+.link-underline {
+  text-decoration: underline;
+}
+
+a[href^="mailto:"] {
+  @include word-wrap;
+}
+
+.more-link {
+  font-size: 15px;
+  color: $blue-dark;
+  text-transform: uppercase;
+  font-family: $font-regular;
+  // span {
+  //   text-decoration: underline;
+  // }
+  i {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 17px;
+    margin-top: 4px;
+    font-size: 10px;
+    padding-left: 3px;
+    color: $pink;
+  }
+}

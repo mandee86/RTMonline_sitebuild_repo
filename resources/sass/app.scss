@@ -1,0 +1,48 @@
+// bootstrap vars and mixins
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/bootstrap/scss/_functions";
+@import "node_modules/bootstrap/scss/_variables";
+@import "node_modules/bootstrap/scss/_mixins";
+
+@import "mixins";
+@import "fonts";
+@import "vars";
+@import "utilities";
+@import "shadow";
+
+@import "basics";
+@import "type";
+
+
+//forms
+@import "forms";
+
+// layouts
+@import "layouts/header";
+@import "layouts/footer";
+@import "layouts/content";
+
+
+//components
+@import "images";
+@import "buttons";
+@import "links";
+@import "breadcrumb";
+@import "tabs";
+@import "article";
+
+@import "tables";
+@import "dropdown";
+@import "popover";
+@import "datepicker";
+
+@import "components/slick-slider";
+@import "components/scroll-slider";
+@import "components/top-slider";
+@import "components/main-slider";
+@import "components/card";
+@import "components/feed-list";
+@import "components/feed-item";
+
+//pages
+@import "pages/home";

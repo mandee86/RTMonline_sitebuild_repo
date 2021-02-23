@@ -1,0 +1,7 @@
+.card {
+  background-color: $white;
+  @extend .box-shadow;
+  padding: 25px 25px 40px 25px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}

@@ -1,0 +1,38 @@
+.table {
+  display: table;
+  margin: 0;
+  .table {
+    background: none;
+  }
+}
+
+.table--fixed {
+  table-layout: fixed;
+}
+
+
+.table__head {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.table__row {
+  display: table-row;
+}
+
+.table__cell {
+  display: table-cell;
+  float: none;
+}
+
+.table__cell--vmiddle {
+  vertical-align: middle;
+}
+
+.table__cell--vtop {
+  vertical-align: top;
+}
+
+.table__cell--bottom {
+  vertical-align: bottom;
+}

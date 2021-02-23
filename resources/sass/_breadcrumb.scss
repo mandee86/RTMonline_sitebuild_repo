@@ -1,0 +1,46 @@
+.breadcrumb-wrapper {
+  text-align: center;
+}
+
+.breadcrumb {
+  font-size: 0;
+  padding: 15px 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  background: none;
+  @include media-breakpoint-down(sm) {
+    padding: 15px 0 0 0;
+  }
+  a, span {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  a {
+    text-decoration: underline;
+    &:hover {
+      color: $black;
+    }
+  }
+  .breadcrumb-item {
+    font-size: 0;
+    line-height: 0;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 0;
+    &+.breadcrumb-item {
+      &:before {
+        // @extend .icon;
+        // content: "\e911";
+        content: ">";
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 9px;
+        margin-top: 2px;
+        padding-left: 10px;
+      }
+    }
+  }
+}
+

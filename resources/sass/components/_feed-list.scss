@@ -1,0 +1,9 @@
+.feed-list--col-2 {
+  > .row {
+    > div:nth-child(2n) {
+      @include media-breakpoint-up(md) {
+        margin-top: 100px;
+      }
+    }
+  }
+}
